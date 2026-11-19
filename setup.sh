@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
-# 雲端環境安裝腳本（貼在 Claude Code 環境設定的 Setup script）：
-#   bash setup.sh
+# 雲端環境安裝腳本。Claude Code 環境設定的「設定指令碼」貼這一行：
+#   [ -f setup.sh ] && bash setup.sh || bash */setup.sh
+# （雲端是在專案的上一層資料夾執行設定指令碼，所以要用 */setup.sh 找到這個檔案）
 # 裝好動畫渲染與語音辨識需要的東西。已經裝過的會略過，重跑沒關係。
 set -u
 cd "$(dirname "$0")"
